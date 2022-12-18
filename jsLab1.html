@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <script>
+        var inputOne; 
+        var inputTwo;
+
+        inputOne = window.prompt("Your first input");
+        inputTwo = window.prompt("Your second input");
+
+        if (inputOne > inputTwo){
+            document.body.style.backgroundColor = 'lightblue';
+            document.write(inputOne + ">" + inputTwo);
+        } else if (inputOne < inputTwo){
+            document.body.style.backgroundColor = 'lightgreen';
+            document.write(inputTwo + ">" + inputOne);
+        } else{ //when they are equal
+            document.body.style.backgroundColor = 'lightyellow';
+            document.write(inputTwo + "==" + inputOne);
+        }
+    </script>
+
+    <input type = "button" value ="1st button" onClick ="alert(inputOne)">
+    <input type = "button" value ="2st button" onClick ="alert(inputTwo)">
+
+    
+
+</body>
+</html>
